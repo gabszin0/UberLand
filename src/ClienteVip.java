@@ -1,7 +1,7 @@
 
 public class ClienteVip extends Cliente{
 
-	private float descontovip;
+	private final float descontovip;
 
 	public ClienteVip (Cliente cliente) {
 		super(cliente.getNome(),cliente.getCpf(),cliente.getDataNasc(),cliente.getCel(),cliente.getEmail(), cliente.getSexo());
