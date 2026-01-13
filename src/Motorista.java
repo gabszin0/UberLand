@@ -10,9 +10,9 @@ public class Motorista extends Pessoa {
 	
 	public Motorista(String nome, String cpf, String datanasc, String end, String cnh, String nomesocial) {
 		super (nome, cpf, datanasc);
-		setEnd(end);
-		setCnh (cnh);
-		setNomesocial(nomesocial);
+		this.end = end;
+		this.cnh = cnh;
+		this.nomesocial = nomesocial;
 		this.ativo = true;
 		veiculos = new ArrayList<>();
 	}
@@ -39,7 +39,7 @@ public class Motorista extends Pessoa {
 			this.nomesocial = nomesocial;
 	}
 
-	public boolean isAtivo() {
+	public boolean getAtivo() {
 		return ativo;
 	}
 
